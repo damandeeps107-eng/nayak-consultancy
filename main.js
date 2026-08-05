@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesList[currentSlide].classList.add('active');
     }
     
-    setInterval(nextHeroSlide, 5000);
+    setInterval(nextHeroSlide, 3000);
 
     /* ==========================================
        GSAP SCROLLTRIGGER & HERO ANIMATIONS

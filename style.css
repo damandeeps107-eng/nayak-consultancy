@@ -62,27 +62,18 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-/* Floating Rounded Frame Layout */
+/* Full Width Edge-to-Edge Layout */
 .app-frame-container {
     position: relative;
     z-index: 10;
-    max-width: 1540px;
-    margin: 30px auto;
-    width: calc(100% - 60px);
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
     background: var(--white-color);
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    box-shadow: 0 30px 80px rgba(36, 36, 36, 0.05);
+    border-radius: 0;
+    border: none;
     overflow: hidden;
     transition: var(--transition-premium);
-}
-
-@media (max-width: 1024px) {
-    .app-frame-container {
-        margin: 15px auto;
-        width: calc(100% - 30px);
-        border-radius: 16px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -495,13 +486,13 @@ img {
     background-repeat: no-repeat;
     opacity: 0;
     transform: scale(1);
-    transition: opacity 1.5s ease-in-out, transform 8s ease-in-out;
+    transition: opacity 0.8s ease-in-out, transform 4.5s ease-in-out;
     z-index: 1;
 }
 
 .hero-slide.active {
     opacity: 1;
-    transform: scale(1.08);
+    transform: scale(1.06);
     z-index: 2;
 }
 
@@ -1475,4 +1466,34 @@ img {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 2px;
+}
+
+/* Mobile-Friendly Horizontal Card Scrolling Layouts */
+@media (max-width: 768px) {
+    .services-grid, .country-cards-grid, .jobs-categories-grid {
+        display: flex !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+        scroll-padding-left: 20px;
+        margin-left: -15px; /* Pull out of container padding for edge-to-edge feel */
+        margin-right: -15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Hide scrollbars for cleaner visual style */
+    .services-grid::-webkit-scrollbar,
+    .country-cards-grid::-webkit-scrollbar,
+    .jobs-categories-grid::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .service-item, .country-card, .job-cat-card {
+        flex: 0 0 290px !important;
+        scroll-snap-align: start;
+        margin-bottom: 0 !important;
+    }
 }
