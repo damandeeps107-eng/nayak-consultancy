@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayak Consultancy Services | Premium Overseas Recruitment</title>
+    <meta name="description" content="Nayak Consultancy Services is India's premium overseas career gateway. Connecting top professionals with elite employers globally.">
+    <meta name="keywords" content="Nayak Consultancy, Overseas Jobs, Gulf Jobs, Europe Recruitment, Visa Services">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Nayak Logo" class="preloader-logo-img">
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Floating UI / Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-glow" id="customCursorGlow"></div>
+
+    <!-- Global Background Elements -->
+    <div class="global-mesh-bg"></div>
+    <div class="global-noise-overlay"></div>
+
+    <!-- FLOATING FRAMED CONTAINER FOR THE ENTIRE WEBSITE -->
+    <div class="app-frame-container">
+        
+        <!-- Background particles container -->
+        <canvas id="particles-canvas"></canvas>
+
+        <!-- Header Navigation -->
+        <header class="main-header">
+            <div class="top-nav-bar">
+                <div class="contact-info-left">
+                    <a href="tel:+916363390618"><i class="fa-solid fa-phone"></i> +91 6363390618</a>
+                    <a href="mailto:nayakconsultancy07@gmail.com"><i class="fa-solid fa-envelope"></i> nayakconsultancy07@gmail.com</a>
+                </div>
+                <div class="top-info-right">
+                    <a href="https://www.instagram.com/_nayak_consultancy_?igsh=MXJydDJta3kycnoxdA==" target="_blank" style="margin-right: 15px;"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <span><i class="fa-solid fa-location-dot"></i> Jajee Complex, Kalaburagi, KA</span>
+                </div>
+            </div>
+            
+            <div class="nav-container">
+                <!-- Logo Corner Fixed -->
+                <a href="#" class="logo-wrap-img">
+                    <img src="logo.png" alt="Nayak Consultancy Services" class="header-logo-img">
+                    <div class="logo-text-meta">
+                        <span class="logo-main">Nayak</span>
+                        <span class="logo-sub">Consultancy</span>
+                    </div>
+                </a>
+                
+                <!-- Nav Menu beside logo -->
+                <nav class="nav-links-wrapper">
+                    <a href="#hero" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#countries" class="nav-link">Countries</a>
+                    <a href="#jobs" class="nav-link">Jobs</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="nav-cta-group">
+                    <a href="#contact" class="btn btn-outline btn-magnetic">Quick Apply</a>
+                    <button class="menu-toggle-btn" aria-label="Toggle Menu" onclick="toggleMobileMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="responsive-menu" id="mobileMenu">
+                <ul class="mobile-nav-list">
+                    <li><a href="#hero" onclick="closeMobileMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMobileMenu()">About Us</a></li>
+                    <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+                    <li><a href="#countries" onclick="closeMobileMenu()">Countries</a></li>
+                    <li><a href="#jobs" onclick="closeMobileMenu()">Jobs</a></li>
+                    <li><a href="#contact" onclick="closeMobileMenu()">Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Hero Section with Animated Image Slideshow -->
+        <div class="hero" id="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80');"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80');"></div>
+                <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=1600&q=80');"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <div class="hero-glass-floating-card">
+                                <span class="tag-glow-dot"></span>
+                                <span>ISO 9001:2015 Recruitment Partner</span>
+                            </div>
+                            <div class="section-title dark-section">
+                                <h1 class="text-anime-style-3">Welcome to Nayak Consultancy Services</h1>
+                                <h3>Your Trusted Partner in Overseas Recruitment & Careers</h3>
+                            </div>
+                            <p class="hero-desc">
+                                Connecting skilled professionals with leading global employers across Gulf countries and Europe. Complete visa, documentation, and flight deployment support.
+                            </p>
+                            <div class="hero-btn">
+                                <a href="#services" class="btn-default">Explore Our Services</a>
+                                <button class="btn-default-1" onclick="openPopup()">Book Your Free Consultation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section (With Founder Profile Saibanna Nayak) -->
+        <div class="about-us" id="about">
+            <div class="container">
+                <div class="row align-items-center grid-split-about">
+                    <!-- Images Left -->
+                    <div class="about-us-images">
+                        <div class="about-img-1">
+                            <figure class="image-anime reveal">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Consultancy Team Meeting">
+                            </figure>
+                        </div>
+                        <div class="about-img-2">
+                            <figure class="image-anime reveal">
+                                <img src="https://images.unsplash.com/photo-1521791136364-728647532899?auto=format&fit=crop&w=600&q=80" alt="Placed Candidates Success">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Content Right -->
+                    <div class="about-us-content">
+                        <div class="section-title">
+                            <h3>About Us</h3>
+                            <h2 class="text-anime-style-3">Guiding Ambitions Beyond Borders with Care, Clarity, and Commitment</h2>
+                            <p class="section-desc">
+                                Nayak Consultancy Services is a premier recruitment agency based in Kalaburagi, Karnataka. Under the visionary leadership of our founder, **Saibanna Nayak**, we have grown to become a trusted pathway for overseas employment opportunities. **Mr. Saibanna Nayak** started this agency with a simple, core mission: to provide genuine, ethical, and legal global career choices for local talents, protecting them from unauthorized mediators.
+                            </p>
+                            <p class="section-desc">
+                                Today, we specialize in providing tailored placements for permanent contracts, trade test evaluations, and complete embassy visa operations to ensure candidates land smoothly in their target destinations.
+                            </p>
+                            
+                            <!-- Founder Quote Card inside About Section -->
+                            <div class="about-founder-box">
+                                <div class="founder-quote-text">
+                                    "Our objective is to match hard-working professionals with the best employers globally, ensuring 100% legal documentation and complete safety."
+                                </div>
+                                <div class="founder-sig">
+                                    <strong>Saibanna Nayak</strong>
+                                    <span>Founder & Managing Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us-btn">
+                            <a href="#services" class="btn-default">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journey Banner -->
+        <div class="your-journey">
+            <div class="container">
+                <div class="journey-row">
+                    <div class="journey-text-box">
+                        <div class="section-title mb-0">
+                            <h3>Your Journey</h3>
+                            <h2 class="text-anime-style-3">Start Your Global Career Today</h2>
+                            <p>Take the first step toward your new future with verified global employers.</p>
+                        </div>
+                    </div>
+                    <div class="journey-btn-box">
+                        <a href="#contact" class="btn-default">Explore Our Services</a>
+                        <b class="mx-3">or</b>
+                        <a href="#contact" class="btn-default-1">Book Your Free Consultation Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <div class="why-choose-us-sunrise" id="why-choose-us">
+            <div class="container">
+                <div class="row align-items-center grid-split-why">
+                    <!-- Features Left -->
+                    <div class="why-choose-content">
+                        <div class="section-title">
+                            <h3>Why Us</h3>
+                            <h2 class="text-anime-style-3">Why Choose Nayak Consultancy Services?</h2>
+                        </div>
+                        <div class="why-choose-content-body">
+                            <!-- Item 1 -->
+                            <div class="why-choose-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Most Trusted Name</h3>
+                                    <p>Recognized as Karnataka's premium overseas manpower recruitment partner.</p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="why-choose-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Proven Legacy</h3>
+                                    <p>Trusted since 15+ years with countless successful placements across Middle East & Europe.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="why-choose-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Expert Guidance</h3>
+                                    <p>Comprehensive, personalized support from document attestation to flight tickets.</p>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="why-choose-item">
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Premium Services</h3>
+                                    <p>We focus on quality matches, optimizing the best visa approvals and career growth outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images Right -->
+                    <div class="why-choose-image">
+                        <div class="why-choose-img-1">
+                            <figure class="image-anime reveal">
+                                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Engineering Placements">
+                            </figure>
+                        </div>
+                        <div class="why-choose-img-2">
+                            <figure class="image-anime reveal">
+                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Construction Jobs Abroad">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="our-services" id="services">
+            <div class="container">
+                <div class="row section-row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h3>How We Help Clients</h3>
+                            <h2 class="text-anime-style-3">Your Journey, Our Priority</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="section-title-content">
+                            <p>At Nayak Consultancy Services, we offer professional career assistance. By focusing on 4 core service pathways, we deliver care, clarity, and successful employment placements with leading corporate clients.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-item">
+                        <div class="service-card-img-box">
+                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80" alt="Job Placements Abroad" class="service-card-img">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="icon-box"><i class="fa-solid fa-plane-departure"></i></div>
+                            <h3>Overseas Job Placement</h3>
+                            <p>Connecting skilled workers, technicians, and graduates with verified employment opportunities in GCC countries and Europe.</p>
+                        </div>
+                        <div class="service-btn"><a href="#contact" class="readmore-btn">Learn More</a></div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-item">
+                        <div class="service-card-img-box">
+                            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=400&q=80" alt="Visa Documentation" class="service-card-img">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="icon-box"><i class="fa-solid fa-folder-open"></i></div>
+                            <h3>Visa & Documentation</h3>
+                            <p>Processing GAMCA medical setups, PCC clearance certificates, degree attestations, and handling work visa stampings.</p>
+                        </div>
+                        <div class="service-btn"><a href="#contact" class="readmore-btn">Learn More</a></div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-item">
+                        <div class="service-card-img-box">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Interview Preparation" class="service-card-img">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+                            <h3>Interview & Prep Training</h3>
+                            <p>Pre-interview briefings, mock sessions, language advice, and skill certifications to ensure selection success.</p>
+                        </div>
+                        <div class="service-btn"><a href="#contact" class="readmore-btn">Learn More</a></div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-item">
+                        <div class="service-card-img-box">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80" alt="Employer Matching" class="service-card-img">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+                            <h3>Employer Vetting & Match</h3>
+                            <p>Verifying recruitment agreements, working hours, accommodation policies, and contract clauses for candidate safety.</p>
+                        </div>
+                        <div class="service-btn"><a href="#contact" class="readmore-btn">Learn More</a></div>
+                    </div>
+                </div>
+                
+                <div class="service-contact-text text-center">
+                    <p>Don't wait for the right time—create it. Talk to our experts now. <a href="#contact">Contact Now</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Countries Section (With Stable High Quality Country Images) -->
+        <div class="countries-section" id="countries">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3>Global Reach</h3>
+                    <h2 class="text-anime-style-3">Destinations & Countries We Serve</h2>
+                </div>
+                
+                <div class="countries-tabs-nav">
+                    <button class="tab-btn active" data-region="gulf">Middle East (Gulf)</button>
+                    <button class="tab-btn" data-region="europe">Europe</button>
+                    <button class="tab-btn" data-region="asia">Southeast Asia</button>
+                </div>
+                
+                <div class="countries-tabs-content">
+                    <!-- Gulf -->
+                    <div class="region-pane active" id="gulf">
+                        <div class="country-cards-grid">
+                            <!-- UAE -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=400&q=80" alt="UAE Jobs" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-city"></i></div>
+                                    <h3>UAE (Dubai, Abu Dhabi)</h3>
+                                    <p>High demand for engineering, hospitality, construction, healthcare, and office staff.</p>
+                                </div>
+                            </div>
+                            <!-- Saudi Arabia -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1597830219514-e6530e867262?auto=format&fit=crop&w=400&q=80" alt="Saudi Arabia Placements" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-building-ngo"></i></div>
+                                    <h3>Saudi Arabia</h3>
+                                    <p>Massive infrastructure projects like NEOM generating placements for construction, logistics, and engineers.</p>
+                                </div>
+                            </div>
+                            <!-- Qatar -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=400&q=80" alt="Qatar Vacancies" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-hotel"></i></div>
+                                    <h3>Qatar</h3>
+                                    <p>Exciting positions in hospitality, oil & gas, engineering, and facility management services.</p>
+                                </div>
+                            </div>
+                            <!-- Kuwait -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1614589136541-152e078a0d92?auto=format&fit=crop&w=400&q=80" alt="Kuwait Recruitment" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-house-chimney"></i></div>
+                                    <h3>Kuwait</h3>
+                                    <p>Steady opportunities for warehouse professionals, healthcare workers, and technicians.</p>
+                                </div>
+                            </div>
+                            <!-- Oman -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1616447275503-4247824c0256?auto=format&fit=crop&w=400&q=80" alt="Oman Careers" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-ship"></i></div>
+                                    <h3>Oman</h3>
+                                    <p>Placements in manufacturing, electrical maintenance, and warehouse operations.</p>
+                                </div>
+                            </div>
+                            <!-- Bahrain -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&w=400&q=80" alt="Bahrain Manpower" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-industry"></i></div>
+                                    <h3>Bahrain</h3>
+                                    <p>Great job roles for office staff, technicians, construction team leaders, and drivers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Europe -->
+                    <div class="region-pane" id="europe">
+                        <div class="country-cards-grid">
+                            <!-- Romania -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=400&q=80" alt="Romania Employment" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-mountain"></i></div>
+                                    <h3>Romania</h3>
+                                    <p>Huge opportunities in manufacturing, warehouse management, drivers, construction, and hospitality.</p>
+                                </div>
+                            </div>
+                            <!-- Croatia -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Croatia Careers" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-water"></i></div>
+                                    <h3>Croatia</h3>
+                                    <p>Growing demand for seasonal hotel staff, chefs, waiters, warehouse staff, and construction labor.</p>
+                                </div>
+                            </div>
+                            <!-- Serbia -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="Serbia Vacancies" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-bridge"></i></div>
+                                    <h3>Serbia</h3>
+                                    <p>Placements for industrial welders, structural engineers, drivers, and food production workers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Southeast Asia -->
+                    <div class="region-pane" id="asia">
+                        <div class="country-cards-grid">
+                            <!-- Malaysia -->
+                            <div class="country-card">
+                                <div class="country-card-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1596422846543-b5d64863e939?auto=format&fit=crop&w=400&q=80" alt="Malaysia Recruitment" class="country-img">
+                                </div>
+                                <div class="country-card-body">
+                                    <div class="country-flag"><i class="fa-solid fa-tree"></i></div>
+                                    <h3>Malaysia</h3>
+                                    <p>High volume requirements for manufacturing, electronics, agriculture, and hospitality professionals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Categories Section -->
+        <div class="jobs-section" id="jobs">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3>Opportunities</h3>
+                    <h2 class="text-anime-style-3">Job Categories In High Demand</h2>
+                </div>
+                
+                <div class="jobs-categories-grid">
+                    <!-- Construction -->
+                    <div class="job-cat-card">
+                        <div class="job-img-box">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=400&q=80" alt="Construction Jobs">
+                        </div>
+                        <h3>Construction</h3>
+                        <p>Masons, steel fixers, carpenters, and site supervisors.</p>
+                    </div>
+                    <!-- Engineering -->
+                    <div class="job-cat-card">
+                        <div class="job-img-box">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&q=80" alt="Engineering Careers">
+                        </div>
+                        <h3>Engineering</h3>
+                        <p>Civil, mechanical, electrical, and planning engineers.</p>
+                    </div>
+                    <!-- Hospitality -->
+                    <div class="job-cat-card">
+                        <div class="job-img-box">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80" alt="Hospitality Placements">
+                        </div>
+                        <h3>Hospitality</h3>
+                        <p>Chefs, waiters, front desk, and room attendants.</p>
+                    </div>
+                    <!-- Healthcare -->
+                    <div class="job-cat-card">
+                        <div class="job-img-box">
+                            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80" alt="Healthcare Roles">
+                        </div>
+                        <h3>Healthcare</h3>
+                        <p>Registered nurses, lab techs, and care assistants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- International Hiring Process Timeline -->
+        <div class="process-section" id="process">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3>How We Work</h3>
+                    <h2 class="text-anime-style-3">International Hiring Process</h2>
+                </div>
+                
+                <div class="timeline-wrapper">
+                    <div class="timeline-line">
+                        <div class="timeline-line-progress"></div>
+                    </div>
+                    
+                    <div class="timeline-item active">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content">
+                            <h3>1. Apply Online</h3>
+                            <p>Submit your updated CV, passport copy, and education certificates using our secure contact application form.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content">
+                            <h3>2. Resume Review</h3>
+                            <p>Our expert team screens your credentials to match them against matching, verified vacancies.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content">
+                            <h3>3. Employer Interview</h3>
+                            <p>Attend physical client interviews, online MS Teams calls, or practical skill test evaluations.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content">
+                            <h3>4. Documentation</h3>
+                            <p>Complete certified medical fitness tests (GAMCA etc.), PCC processing, and legal degree attestation checks.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot">5</div>
+                        <div class="timeline-content">
+                            <h3>5. Visa Issuance</h3>
+                            <p>We process work permit applications with target country ministries and embassy portals to secure work visas.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot">6</div>
+                        <div class="timeline-content">
+                            <h3>6. Travel & Deployment</h3>
+                            <p>Attend pre-departure orientations, collect flight tickets, land safely, and begin your international journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Counters Section -->
+        <div class="counters-section" id="counters">
+            <div class="container grid-four">
+                <div class="counter-box text-center">
+                    <div class="counter-number"><span class="count-up" data-target="3500">0</span>+</div>
+                    <div class="counter-label">Candidates Placed</div>
+                </div>
+                <div class="counter-box text-center">
+                    <div class="counter-number"><span class="count-up" data-target="150">0</span>+</div>
+                    <div class="counter-label">Global Partners</div>
+                </div>
+                <div class="counter-box text-center">
+                    <div class="counter-number"><span class="count-up" data-target="10">0</span>+</div>
+                    <div class="counter-label">Destinations Countries</div>
+                </div>
+                <div class="counter-box text-center">
+                    <div class="counter-number"><span class="count-up" data-target="98">0</span>%</div>
+                    <div class="counter-label">Visa Approval Rate</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3>Success Stories</h3>
+                    <h2 class="text-anime-style-3">Feedback From Placed Candidates</h2>
+                </div>
+                
+                <div class="testimonials-slider-container">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <p class="testimonial-text">
+                                "Nayak Consultancy helped me secure an electrical technician role in Dubai. The entire recruitment process took just under 45 days. They handled my documentation, medical tests, and work visa smoothly. Very recommended and trustworthy consultancy."
+                            </p>
+                            <div class="candidate-meta">
+                                <div class="candidate-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <h4>Manjunath Swamy</h4>
+                                    <span class="candidate-role">Electrician, Dubai UAE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <p class="testimonial-text">
+                                "I got placed as a warehouse associate in Bucharest, Romania. I was initially worried about the documentation and language barrier in Europe, but the consultants at Nayak answered all my questions, helped with translation and PCC. Thank you, team!"
+                            </p>
+                            <div class="candidate-meta">
+                                <div class="candidate-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <h4>Ramesh Patil</h4>
+                                    <span class="candidate-role">Warehouse Associate, Romania</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                            <p class="testimonial-text">
+                                "Highly professional experience. From my screening interview to client selection in Saudi Arabia as a pipe welder, they guided me through everything. They also checked up on me after I landed in Riyadh. Highly recommend."
+                            </p>
+                            <div class="candidate-meta">
+                                <div class="candidate-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <h4>Arbaz Khan</h4>
+                                    <span class="candidate-role">6G Welder, Saudi Arabia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials-controls">
+                        <button class="slide-nav-btn prev-btn" aria-label="Previous Testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="slide-nav-btn next-btn" aria-label="Next Testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3>FAQ</h3>
+                    <h2 class="text-anime-style-3">Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-accordion-wrapper">
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Which countries do you recruit for?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body">
+                            <p>We actively recruit skilled professionals for Gulf Cooperation Council (GCC) countries (UAE, Qatar, Saudi Arabia, Kuwait, Oman, Bahrain), Southeast Asian destinations like Malaysia, and European countries including Romania, Croatia, and Serbia.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>Are the job offers verified and legal?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body">
+                            <p>Yes, absolutely. We work with registered overseas recruiters and verified corporate clients. All work agreements comply fully with local labor laws of the destination country, and work visas are processed through official government embassies.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-header" aria-expanded="false">
+                            <span>How long does the entire placement process take?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body">
+                            <p>Typically, the timeframe ranges between 30 to 90 days. This depends heavily on client interview loops, medical reports validation, work permit issuance, and visa stamping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section" id="contact">
+            <div class="container grid-split">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send Us A Message</h3>
+                    <p>Submit your details below and our visa counselor will reach out to you within 24 hours.</p>
+                    
+                    <form id="visaApplicationForm" class="premium-form">
+                        <div class="form-row grid-two">
+                            <div class="input-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phoneNumber">Phone Number *</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+91 9900000000" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row grid-two">
+                            <div class="input-group">
+                                <label for="emailAddr">Email Address *</label>
+                                <input type="email" id="emailAddr" name="emailAddr" placeholder="john@example.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="targetJob">Desired Job Category *</label>
+                                <select id="targetJob" name="targetJob" required>
+                                    <option value="" disabled selected>Select Category</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Hospitality">Hospitality</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    <option value="Warehouse">Warehouse</option>
+                                    <option value="Drivers">Drivers</option>
+                                    <option value="Electricians">Electricians</option>
+                                    <option value="Welders">Welders</option>
+                                    <option value="Plumbers">Plumbers</option>
+                                    <option value="Office Staff">Office Staff</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="destCountry">Preferred Country *</label>
+                            <select id="destCountry" name="destCountry" required>
+                                <option value="" disabled selected>Select Destination</option>
+                                <option value="UAE">UAE</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Serbia">Serbia</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="userMessage">Message / Profile Details</label>
+                            <textarea id="userMessage" name="userMessage" rows="4" placeholder="Briefly describe your years of experience, current location..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                        <div class="form-feedback-message" id="formFeedback"></div>
+                    </form>
+                </div>
+
+                <!-- Info & Map -->
+                <div class="contact-info-side">
+                    <div class="section-title">
+                        <h3>Get In Touch</h3>
+                        <h2>Visit Our Corporate Office</h2>
+                    </div>
+                    
+                    <div class="contact-cards-stack">
+                        <div class="info-card-row">
+                            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>SB College Road, Jajee Complex, 3rd Floor, Kalaburagi, Karnataka, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card-row">
+                            <div class="info-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:nayakconsultancy07@gmail.com">nayakconsultancy07@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-card-row">
+                            <div class="info-icon"><i class="fa-solid fa-headset"></i></div>
+                            <div>
+                                <h4>Phone Support</h4>
+                                <p><a href="tel:+916363390618">+91 6363390618</a> (Mon - Sat, 9:30 AM - 6:30 PM)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-iframe-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.29290074213!2d76.8290299!3d17.3255169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bced649df16a759%3A0xc06883bfd12f11ec!2sJajee%20Complex!5e0!3m2!1sen!2sin!4v1692131920000!5m2!1sen!2sin" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container grid-four">
+                <div class="footer-col logo-col">
+                    <img src="logo.png" alt="Nayak Logo" class="footer-logo-img">
+                    <p>Premium global manpower recruitment agencies linking Indian skilled force with trusted overseas firms since years.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/_nayak_consultancy_?igsh=MXJydDJta3kycnoxdA==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/916363390618" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Job Sectors</h4>
+                    <ul>
+                        <li><a href="#jobs">Engineering Jobs</a></li>
+                        <li><a href="#jobs">Healthcare Opportunities</a></li>
+                        <li><a href="#jobs">Hospitality Roles</a></li>
+                        <li><a href="#jobs">Warehouse Logistics</a></li>
+                        <li><a href="#jobs">Construction Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Overseas Job Placement</a></li>
+                        <li><a href="#services">Visa Documentation Guide</a></li>
+                        <li><a href="#services">Employer Vetting</a></li>
+                        <li><a href="#services">Interview Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Location</h4>
+                    <p class="address-para">
+                        Jajee Complex, 3rd Floor,<br>
+                        SB College Road,<br>
+                        Kalaburagi, Karnataka - 585102
+                    </p>
+                    <p class="contact-para">
+                        <i class="fa-solid fa-phone"></i> +91 6363390618
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Nayak Consultancy Services. All Rights Reserved. Designed by creative agency standard.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Interactive Popup Form Modal -->
+    <div id="popupForm" class="popup-overlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3>Book Free Consultation</h3>
+                <span onclick="closePopup()">&times;</span>
+            </div>
+            <form id="leadForm" class="popup-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="date" name="appointment_date" required>
+                    <select name="time_slot" required>
+                        <option value="">Time Slot</option>
+                        <option>10 AM - 12 PM</option>
+                        <option>12 PM - 2 PM</option>
+                        <option>2 PM - 4 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="appointment_type" required>
+                        <option value="">Appointment Type</option>
+                        <option value="Online">Online</option>
+                        <option value="Inperson">In Person</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="query" placeholder="Describe your query..." rows="3"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Book Appointment</button>
+                <div id="popupFormFeedback" class="form-feedback-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- CDN scripts for GSAP, ScrollTrigger, Lenis Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    
+    <!-- Local Logic Script -->
+    <script src="main.js"></script>
+</body>
+</html>
